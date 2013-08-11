@@ -3,6 +3,8 @@ use warnings;
 package Acme::Robd::Boring; 
 # ABSTRACT: a really boring module
 
+our $VERSION = 0.002;
+
 =head1 SYNOPSIS
 
 use strict;
@@ -34,5 +36,13 @@ returns the package (module) name
 =cut
 
 sub name { __PACKAGE__ }
+
+=method version
+
+returns the package (module) version
+
+=cut
+
+sub version { $VERSION }
 
 1;

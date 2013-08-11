@@ -10,4 +10,6 @@ isa_ok $tb, 'Acme::Robd::Boring', 'instantiated one';
 
 is $tb->name, 'Acme::Robd::Boring', 'returns class name';
 
+is $tb->version, $Acme::Robd::Boring::VERSION, 'returns class vers';
+
 done_testing();
